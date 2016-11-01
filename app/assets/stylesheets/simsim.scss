@@ -1,0 +1,141 @@
+// Place all the styles related to the simsim controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title{
+  position: relative;
+  text-align: center;
+  background-color: #323335;
+  font-size: 200%;
+  padding: 1em;
+  color: white;
+  margin-top: 2%;
+  width: 60%;
+  left: 20%;
+}
+
+.page {
+  position: relative;
+  z-index: 5;
+  color: #000;
+  width: 60%;
+  left: 20%;
+  top: 5%;
+  padding: 20px;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('/cloud.png') center center;
+  opacity: .3;
+}
+
+.simsimbubble {
+  position: relative;
+  width: 250px;
+  height: 55px;
+  padding: 0px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #7F7F7F solid 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.simsimbubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 10px 7px 0;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -10px;
+  top: 28px;
+}
+
+.simsimbubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 11px 8px 0;
+  border-color: transparent #7F7F7F;
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -13px;
+  top: 27px;
+}
+
+.userbubble {
+  position: relative;
+  width: 300px;
+  height: 55px;
+  padding: 0px;
+  background: #FFFFB6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #7F7FFF solid 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.userbubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #FFFFB6;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -10px;
+  top: 22px;
+}
+
+.userbubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 11px 0 11px 11px;
+  border-color: transparent #7F7FFF;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -13px;
+  top: 21px;
+}
+
+.talk{
+  position: relative;
+  text-align: center;
+  background-color: white;
+  margin-top: 1em;
+  width: 60%;
+  left: 20%;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: absolute;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  font-size: 1.5em;
+  padding: .5em;
+  pointer-events: none;
+}

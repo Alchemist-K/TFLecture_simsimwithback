@@ -1,0 +1,2 @@
+module SimsimHelper
+end
