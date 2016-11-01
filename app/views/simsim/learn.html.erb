@@ -12,18 +12,18 @@
 
 
     <!-- *** 심심이에게 가르치고 싶은 말을 입력하는 공간 ***-->
-    <form>
+    <form action="/simsim/teach" method="post">
       <h3 style="margin-left: 1em;"><b>심심아, 내가 이렇게 말하면~<b></h3>
         <div class="col-md-1 inner-addon">
           <i class="glyphicon glyphicon-volume-up"></i>
         </div>
-        <input type="text" class="form-control" placeholder="심심이에게 하고싶은 말을 적어주세요!" style="height:3em; width:80%;"><hr>
+        <input type="text" class="form-control" name="ask" placeholder="심심이에게 하고싶은 말을 적어주세요!" style="height:3em; width:80%;"><hr>
 
       <h3 style="margin-left: 1em;"><b>너는 이렇게 말해줘!<b></h3>
         <div class="col-md-1 inner-addon">
           <i class="glyphicon glyphicon-bullhorn"></i>
         </div>
-        <input type="text" class="form-control" placeholder="심심이가 대답할 말을 적어주세요!" style="height:3em; width:80%;"><hr>
+        <input type="text" class="form-control" name="answer" placeholder="심심이가 대답할 말을 적어주세요!" style="height:3em; width:80%;"><hr>
 
       <button type="submit" class="btn btn-warning" style="height:3em; color:black; margin-left:75%;"><b>심심이에게 가르쳐주기!</b></button>
     </form>
